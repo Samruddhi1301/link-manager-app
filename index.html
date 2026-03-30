@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link Manager | Organize Your Learning</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="app-container">
+        <aside class="sidebar">
+            <div class="logo-container">
+                <img src="assets/images/logo.png" alt="Logo" class="logo">
+            </div>
+            <h2>Add New Topic</h2>
+            <div class="input-group">
+                <input type="text" id="topicName" placeholder="Topic Name (e.g. Python)">
+                <input type="url" id="topicLink" placeholder="Course Link">
+                <textarea id="taskInput" placeholder="Initial Tasks (comma or enter separated)"></textarea>
+                <button id="addBtn">Add to Dashboard</button>
+            </div>
+        </aside>
+
+        <main class="dashboard" id="cardContainer"></main>
+    </div>
+
+    <script src="js/storage.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
